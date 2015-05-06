@@ -1,0 +1,20 @@
+<h1>TO DO LISTS</h1>
+
+<h2>Your Lists</h2>
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+<ul>
+
+{% for list in list_list %}
+    <li><a href="{% url 'list_detail' list.id %}">{{ list.name }}</a>
+{% endfor %}
+
+</ul>
+
+<hr/>
+
+
+
