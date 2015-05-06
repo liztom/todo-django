@@ -1,4 +1,4 @@
-#!~/todo-django/venv/bin/python
+#!~/todo-django/opt/test/bin/python
 import os
 import sys
 
